@@ -1,0 +1,11 @@
+
+import { BundledTest } from '@bhbr/tsts'
+
+export const betrayTest = new BundledTest({
+	name: 'Betray test',
+	subtests: [
+		
+	]
+})
+
+betrayTest.run()
