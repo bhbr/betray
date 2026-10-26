@@ -1,6 +1,6 @@
 {
   "name": "@bhbr/betray",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some convenience functions for handling arrays",
   "type": "module",
   "main": "./dist/betray.js",
