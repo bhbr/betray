@@ -1,4 +1,3 @@
-
 import { equal } from '@bhbr/egalite'
 import { copy } from '@bhbr/copycat'
 
@@ -102,19 +101,4 @@ export function arrayWithReplacements(oldArr: Array<string>, replacements: Recor
 	}
 	return newArr
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

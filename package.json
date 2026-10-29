@@ -3,23 +3,21 @@
   "version": "1.0.1",
   "description": "Some convenience functions for handling arrays",
   "type": "module",
-  "main": "./dist/betray.js",
-  "types": "./dist/betray.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/betray.d.ts",
-      "import": "./dist/betray.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
-    "dist/betray.js",
-    "dist/betray.d.ts",
-    "dist/betray.js.map",
-    "dist/betray.d.ts.map"
+    "dist/",
+    "!dist/_tests"
   ],
   "scripts": {
-    "build": "cd build && ./build.sh",
-    "test": "node dist/_tests/betray_tests.js",
+    "build": "./build.sh",
+    "test": "node dist/_tests/tests.js",
     "prepack": "npm run build"
   },
   "repository": {
@@ -34,7 +32,9 @@
   "author": "Ben Hambrecht",
   "license": "ISC",
   "dependencies": {
-    "@bhbr/copycat": "^1.0.0"
+    "@bhbr/copycat": "^1.0.0",
+    "@bhbr/egalite": "^1.2.0",
+    "@bhbr/upper-class": "^1.0.1"
   },
   "devDependencies": {
     "@bhbr/tsts": "^1.1.3"
